@@ -87,9 +87,8 @@ ENV/
 # Rope project settings
 .ropeproject
 
-#VS Code
-.vscode/
-
 #Local
+.vscode/
+audio_files/
 tests.py
 settings.ini
