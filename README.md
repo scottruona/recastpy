@@ -1,5 +1,5 @@
 # recastpy
-A minimal Python wrapper for the [Recast.AI](https://recast.ai/) API.
+An unofficial, minimal Python wrapper for the [Recast.AI](https://recast.ai/) API. Recast.AI is a natual language parser.
 
 ## Dependency
 `pip install requests`
