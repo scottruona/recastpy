@@ -1,4 +1,3 @@
-#from requests_toolbelt import MultipartEncoder
 import requests
 
 
@@ -36,9 +35,7 @@ class Recast(object):
                  Maximum duration: 10 seconds.
         """
 
-        
-        response = requests.post('{url}/request'.format(url=self.url),
-                                 files={'voice':voice},
-                                 headers=self.headers
-                                )
-        return response.json()
+        return requests.post('{url}/request'.format(url=self.url),
+                             files={'voice':voice},
+                             headers=self.headers
+                            ).json()
