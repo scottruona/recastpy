@@ -11,7 +11,7 @@ class Recast(object):
     def __init__(self, token):
         self.token = token
         self.headers = {'Authorization': 'Token ' + self.token}
-        self.url = 'https://api.recast.ai'
+        self.url = 'https://api.recast.ai/v1'
 
     def text_request(self, text):
         """
