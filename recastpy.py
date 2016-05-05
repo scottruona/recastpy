@@ -31,10 +31,11 @@ class Recast(object):
         text -- string, max 256 characters
         """
 
-        return requests.post('{url}/request'.format(url=self.url),
-                             params={'text': text},
-                             headers=self.headers
-                            ).json()
+        return RequestResponse(requests.post('{url}/request'.format(url=self.url),
+                                             params={'text': text},
+                                             headers=self.headers
+                                            )
+                              )
 
     def voice_request(self, voice):
         """
