@@ -52,6 +52,6 @@ print(text_response.json)
 
 ## To-Do
 
-[ ] Implement all endpoints
-[ ] Implement streaming voice?
-[ ] Add helper attributes to RequestResponse class 
+- [ ] Implement all endpoints
+- [ ] Implement streaming voice?
+- [ ] Add helper attributes to RequestResponse class 
