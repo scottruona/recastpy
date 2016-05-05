@@ -1,6 +1,17 @@
 import requests
 
 
+class RequestResponse(object):
+    """
+    Recast.AI Request Response class
+
+    .json -- JSON response
+    """
+
+    def __init__(self, response):
+        self.json = response.json()
+
+
 class Recast(object):
     """
     Recast.AI API class
@@ -35,7 +46,8 @@ class Recast(object):
                  Maximum duration: 10 seconds.
         """
 
-        return requests.post('{url}/request'.format(url=self.url),
-                             files={'voice':voice},
-                             headers=self.headers
-                            ).json()
+        return RequestResponse(requests.post('{url}/request'.format(url=self.url),
+                                             files={'voice':voice},
+                                             headers=self.headers
+                                            )
+                              )
