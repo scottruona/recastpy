@@ -16,7 +16,7 @@ text_response = recast.text_request('How do I use recast.ai?')
 voice_response = recast.voice_request(open('my_voice_file.wav', mode='rb'))
 
 # Receive JSON!
-print(text_response)
+print(text_response.json)
 >> {
     "source": "How do I use recast.ai?",
     "intents": [],
@@ -48,3 +48,9 @@ print(text_response)
     "status": 200
 }
 ```
+
+
+## To-Do
+[ ] Implement all endpoints
+[ ] Implement streaming voice?
+[ ] Add helper attributes to RequestResponse class 
