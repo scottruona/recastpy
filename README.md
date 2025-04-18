@@ -1,5 +1,8 @@
+> [!NOTE]
+> Recast.AI was [acquired by SAP](https://web.archive.org/web/20180123215837/https://news.sap.com/sap-powers-innovation-france-acquires-recastai/) and no longer exists.
+
 # recastpy
-An unofficial, minimal Python wrapper for the [Recast.AI](https://recast.ai/) API. Recast.AI is a natual language parser.
+An unofficial, minimal Python wrapper for the [Recast.AI](https://web.archive.org/web/20180224041630/https://recast.ai/#expand) API. Recast.AI is a natual language parser.
 
 ## Dependency
 `pip install requests`
